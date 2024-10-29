@@ -1,11 +1,8 @@
-@mixin width-border {
-	width: 100%;
-	border-radius: 0.5em;
-}
+@mixin color-hover {
+	cursor: pointer;
+	transition: color 0.2s;
 
-@mixin flex {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	row-gap: 1.5em;
+	&:hover {
+		color: var(--blue);
+	}
 }

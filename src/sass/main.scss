@@ -1,4 +1,4 @@
-@use "./utilities/reset" as *;
+@use "./utilities/index" as *;
 
 :root {
 	--white: hsl(0, 0%, 100%);
@@ -138,6 +138,25 @@ body {
 @media (min-width: 992px) {
 	.main {
 		max-width: 36em;
+
+		&__top {
+			&-mark {
+				@include color-hover;
+			}
+		}
+
+		&__bottom {
+			&-box {
+				&-texts {
+					&-text {
+						&-last,
+						&-name {
+							@include color-hover;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 

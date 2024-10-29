@@ -1,0 +1,147 @@
+@use "./utilities/reset" as *;
+
+:root {
+	--white: hsl(0, 0%, 100%);
+	--very-light-grayish-blue: hsl(210, 60%, 98%);
+	--light-grayish-blue-1: hsl(211, 68%, 94%);
+	--light-grayish-blue-2: hsl(205, 33%, 90%);
+	--grayish-blue: hsl(219, 14%, 63%);
+	--dark-grayish-blue: hsl(219, 12%, 42%);
+	--very-dark-blue: hsl(224, 21%, 14%);
+	--red: #f65351;
+	--blue: hsl(219, 85%, 26%);
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #333;
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.main {
+	padding: 1.5em;
+	width: 100%;
+	max-width: 375px;
+	background-color: var(--white);
+
+	&__top {
+		padding-bottom: 1.5em;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&-left {
+			display: flex;
+			align-items: center;
+			column-gap: 0.5em;
+			&-title,
+			&-number {
+				font-size: 2rem;
+				font-weight: 800;
+			}
+
+			&-number {
+				padding: 0.2em 0.7em;
+				background-color: var(--blue);
+				color: var(--white);
+				border-radius: 0.4em;
+			}
+		}
+
+		&-mark {
+			font-size: 1.3rem;
+			color: var(--dark-grayish-blue);
+			font-weight: 800;
+		}
+	}
+
+	&__bottom {
+		&-box {
+			display: flex;
+			column-gap: 1em;
+			padding: 1em;
+			margin-bottom: 1em;
+			background-color: var(--very-light-grayish-blue);
+			border-radius: 0.6em;
+
+			&:nth-child(n + 4) {
+				background-color: var(--white);
+			}
+
+			&-img {
+				height: 39px;
+			}
+
+			&-texts {
+				font-size: 1.25rem;
+				line-height: 1.4;
+
+				&-text {
+					font-weight: 500;
+					color: var(--dark-grayish-blue);
+
+					&-name {
+						margin-right: 0.3em;
+						color: black;
+					}
+
+					&-last {
+						margin-left: 0.3em;
+
+						&--chess {
+							color: var(--blue);
+						}
+					}
+
+					&-name,
+					&-last {
+						font-weight: 800;
+					}
+
+					&-dot {
+						margin-left: 0.4em;
+						display: inline-block;
+						height: 8px;
+						width: 8px;
+						border-radius: 50%;
+						background-color: var(--red);
+						-webkit-box-shadow: 0px 0px 24px 1px rgba(246, 83, 81, 1);
+						-moz-box-shadow: 0px 0px 24px 1px rgba(246, 83, 81, 1);
+						box-shadow: 0px 0px 24px 1px rgba(246, 83, 81, 1);
+					}
+				}
+				&-time {
+					margin-top: 0.1em;
+					color: var(--grayish-blue);
+				}
+
+				&-message {
+          margin-top: 0.8em;
+					padding: 0.7em;
+					border: 1px solid var(--light-grayish-blue-2);
+          border-radius: .3em;
+          color: var(--dark-grayish-blue);
+          font-weight: 500;
+				}
+			}
+
+      &-chess {
+        height: 45px;
+      }
+		}
+	}
+}
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ### Body Copy
+
+// - Font size (paragraph): 16px
+
+// ### Font
+
+// - Family: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans)
+// - Weights: 500, 800

@@ -1,13 +1,9 @@
+import Top from "./components/Top";
+
 function App() {
 	return (
 		<main className='main'>
-			<div className='main__top'>
-				<div className='main__top-left'>
-					<h1 className='main__top-left-title'>Notifications</h1>
-					<p className='main__top-left-number'>3</p>
-				</div>
-				<p className='main__top-mark'> Mark all as read</p>
-			</div>
+			<Top />
 			<div className='main__bottom'>
 				<div className='main__bottom-box'>
 					<img src='src/assets/img/avatar-mark-webber.webp' alt='Profile picture' className='main__bottom-box-img' />
@@ -104,31 +100,5 @@ function App() {
 		</main>
 	);
 }
-
-//  3
-
-//
-
-//
-//   1m ago
-
-//   Angela Gray followed you
-//   5m ago
-
-//   Jacob Thompson has joined your group Chess Club
-//   1 day ago
-
-//   Rizky Hasanuddin sent you a private message
-//   5 days ago
-//
-
-//   Kimberly Smith commented on your picture
-//   1 week ago
-
-//   Nathan Peterson
-//   2 weeks ago
-
-//   Anna Kim  Chess Club
-//   2 weeks ago
 
 export default App;

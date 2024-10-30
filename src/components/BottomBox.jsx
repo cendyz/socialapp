@@ -1,4 +1,4 @@
-import { PersonsInfo } from "./PersonsInfo";
+import { PersonsInfo } from "./data";
 
 const PersonBox = () => {
 	return (
